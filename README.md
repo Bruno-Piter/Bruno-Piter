@@ -4,6 +4,9 @@
 
 
 
+ <img src="https://github.com/Bruno-Piter/Bruno-Piter/assets/133192036/aff9e38a-1fab-44b9-b6a2-ce848a52e733" width="180" />
+
+
 <div style="display: inline_block"><br>
   <img align="center" alt="Piter-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Piter-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
