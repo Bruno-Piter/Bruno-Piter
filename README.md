@@ -2,10 +2,7 @@
 
 📫 How to reach me: piterbruno97@gmail.com
 
-
-
- <img src="https://github.com/Bruno-Piter/Bruno-Piter/assets/133192036/aff9e38a-1fab-44b9-b6a2-ce848a52e733" width="180" />
-
+![Mew](https://github.com/Bruno-Piter/Bruno-Piter/assets/133192036/b12939f0-0b82-42d3-bd28-6a4afc5affe8)
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Piter-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
