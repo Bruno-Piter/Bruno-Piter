@@ -2,7 +2,7 @@
 
 📫 How to reach me: piterbruno97@gmail.com
 
-![Mew](https://github.com/Bruno-Piter/Bruno-Piter/assets/133192036/b12939f0-0b82-42d3-bd28-6a4afc5affe8)
+
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Piter-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
@@ -21,4 +21,4 @@
   
 </div>
 
-
+![Mew](https://github.com/Bruno-Piter/Bruno-Piter/assets/133192036/b12939f0-0b82-42d3-bd28-6a4afc5affe8)
