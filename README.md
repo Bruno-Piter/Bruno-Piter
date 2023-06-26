@@ -1,4 +1,4 @@
-### Olá meu nome é Bruno Piter 👋
+### Olá 👋
 
 📫 How to reach me: piterbruno97@gmail.com
 
