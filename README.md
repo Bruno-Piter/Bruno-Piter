@@ -1,7 +1,7 @@
-# Bem-vindo ao meu perfil!
 
-me: piterbruno97@gmail.com
 
+Me: piterbruno97@gmail.com
+#
 <div style="display: inline_block"><br>
    <img align="center" alt="Piter-CSharp" src="https://img.icons8.com/?size=100&id=Fycm8TUhWmFU&format=png&color=000000">
    <img align="center" alt="Piter-DotNet" src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white">
@@ -15,6 +15,7 @@ me: piterbruno97@gmail.com
    <img align="center" alt="Piter-RMQ" src="https://img.shields.io/badge/rabbitmq-%23FF6600.svg?&style=for-the-badge&logo=rabbitmq&logoColor=white">
 </div>
 
+#
 <br><br>
 
 <div align="center">
