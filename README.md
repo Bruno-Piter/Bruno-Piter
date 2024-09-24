@@ -1,6 +1,5 @@
-### Olá 👋
 
-📫 How to reach me: piterbruno97@gmail.com
+me: piterbruno97@gmail.com
 
 <div style="display: inline_block"><br>
    <img align="center" alt="Piter-CSharp" src="https://img.icons8.com/?size=100&id=Fycm8TUhWmFU&format=png&color=000000">
@@ -13,5 +12,5 @@
    <img align="center" alt="Piter-CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
    <img align="center" alt="Piter-HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 </div>
-  ##
-![Mew](https://github.com/Bruno-Piter/Bruno-Piter/assets/133192036/b12939f0-0b82-42d3-bd28-6a4afc5affe8)
+
+![Demonstração](https://i.pinimg.com/originals/c4/ab/62/c4ab62e1d23e4571b9abb5b3ee44788d.gif)
