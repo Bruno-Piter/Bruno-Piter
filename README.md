@@ -1,3 +1,4 @@
+# Bem-vindo ao meu perfil!
 
 me: piterbruno97@gmail.com
 
@@ -11,6 +12,11 @@ me: piterbruno97@gmail.com
    <img align="center" alt="Piter-MySql" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
    <img align="center" alt="Piter-CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
    <img align="center" alt="Piter-HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+   <img align="center" alt="Piter-RMQ" src="https://img.shields.io/badge/rabbitmq-%23FF6600.svg?&style=for-the-badge&logo=rabbitmq&logoColor=white">
 </div>
 
-![Demonstração](https://i.pinimg.com/originals/c4/ab/62/c4ab62e1d23e4571b9abb5b3ee44788d.gif)
+<br><br>
+
+<div align="center">
+  <img src="https://i.pinimg.com/originals/c4/ab/62/c4ab62e1d23e4571b9abb5b3ee44788d.gif" width="300px">
+</div>
