@@ -1,9 +1,9 @@
-<h3 align="center">こんにちは</h3>
+<h1 align="center">こんにちは</h1>
 
 ###
 
 <div align="center">
-  <img height="127" src="https://i.pinimg.com/originals/c4/ab/62/c4ab62e1d23e4571b9abb5b3ee44788d.gif"  />
+  <img height="200" width="200" src="https://i.pinimg.com/originals/c4/ab/62/c4ab62e1d23e4571b9abb5b3ee44788d.gif"  />
 </div>
 
 ###
@@ -52,5 +52,25 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" height="60" alt="android logo"  />
 </div>
+
+###
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/pacman-contribution-graph.svg">
+</picture>
+
+###
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/pacman-contribution-graph.svg">
+</picture>
+
+###
+
+<img src="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/snake.svg" alt="Snake animation" />
 
 ###
