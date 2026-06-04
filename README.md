@@ -88,8 +88,8 @@ Click the buttons above to send gamepad input, then refresh the page to see the 
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Bruno-Piter&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" alt="github stats" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
+  <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true" alt="github stats" />
+  <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
 </div>
 
 ###
