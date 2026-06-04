@@ -20,7 +20,8 @@
 
 ## 💻 ABOUT
 
-<img align="right" width="380" src="./assets/matrix.gif" alt="Matrix code rain" />
+<img align="right" height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
+<img align="right" height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true" alt="github stats" />
 
 ```jsx
 import { Developer, Monster } from "@bruno/profile";
@@ -65,11 +66,11 @@ export default function Profile() {
   <img src="https://skillicons.dev/icons?i=cs,dotnet,ts,js,html,css,mysql,postgres,mongodb,docker,git,github,postman,azure&perline=14" height="48" alt="tech stack" />
 </div>
 
-<sub>React spins via <a href="https://github.com/harish-sethuraman/readme-components">readme-components</a>; the rest use <a href="https://skillicons.dev">skillicons</a> at the same height to keep one consistent frame.</sub>
-
 ###
 
 ## 🎮 Let's play Pokémon together ?
+
+<img align="right" width="380" src="./assets/matrix.gif" alt="Matrix code rain" />
 
 <img src="https://toy.cloudreve.org/image" width="300"/>
 
@@ -78,30 +79,6 @@ export default function Profile() {
 <br><a href="https://toy.cloudreve.org/control?button=3&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/down.png" width="30"/></a>
 <br><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><a href="https://toy.cloudreve.org/control?button=6&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/select.png" width="74"/></a> <a href="https://toy.cloudreve.org/control?button=7&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/start.png" width="65" /></a>
 
-<details><summary>About this game section</summary>
-
-Click the buttons above to send gamepad input, then refresh the page to see the latest game screen. This is a shared cloud-gaming session powered by the [Gameboy.Live](https://github.com/HFO4/gameboy.live) emulator — everyone plays the same game together.
-</details>
-
-###
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true" alt="github stats" />
-  <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
-</div>
-
-###
-
-## 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/github-contribution-grid-snake.svg">
-  </picture>
-</div>
+<br clear="right"/>
 
 ###
