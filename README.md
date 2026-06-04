@@ -20,8 +20,9 @@
 
 ## 💻 ABOUT
 
-<img align="right" height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
-<img align="right" height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true" alt="github stats" />
+<table>
+<tr>
+<td valign="top" width="58%">
 
 ```jsx
 import { Developer, Monster } from "@bruno/profile";
@@ -54,7 +55,14 @@ export default function Profile() {
 }
 ```
 
-<br clear="right"/>
+</td>
+<td valign="top" width="42%" align="center">
+  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
+  <br/>
+  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true" alt="github stats" />
+</td>
+</tr>
+</table>
 
 ###
 
