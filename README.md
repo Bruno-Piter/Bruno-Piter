@@ -23,7 +23,7 @@
 <img align="right" width="380" src="./assets/matrix.gif" alt="Matrix code rain" />
 
 ```jsx
-import { Developer, Stack, Coffee } from "@bruno/profile";
+import { Developer, Monster } from "@bruno/profile";
 
 const bruno = {
   name: "Bruno Piter Lins de Oliveira",
@@ -46,8 +46,7 @@ const bruno = {
 export default function Profile() {
   return (
     <Developer {...bruno}>
-      <Stack focus="microservices & clean code" />
-      <Coffee status="always brewing ☕" />
+      <Monster status="fueling the code ⚡" />
       {/* Thanks for stopping by — hope you find my work interesting! */}
     </Developer>
   );
