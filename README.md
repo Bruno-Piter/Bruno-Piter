@@ -31,15 +31,13 @@
 import { Developer, Monster } from "@bruno/profile";
 
 const bruno = {
-  name: "Bruno Piter Lins de Oliveira",
-  location: "Rio de Janeiro, RJ - Brazil",
+  name: "Bruno Piter",
   role: "Full Stack Developer",
-  company: "Domingues e Pinho Contadores",
   education: [
     "Software Engineering - USP/Esalq",
     "Google UX Design Professional",
   ],
-  languages: ["pt_BR", "en_US"],
+  languages: ["pt_BR", "en_US", "ja_JP"],
   stack: {
     backend: ["C#", ".NET Core", "ASP.NET MVC"],
     frontend: ["React", "TypeScript", "HTML", "CSS"],
