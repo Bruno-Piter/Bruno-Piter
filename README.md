@@ -1,56 +1,108 @@
-<h1 align="center">こんにちは</h1>
+<h1 align="center">こんにちは 👋</h1>
 
-###
-
-<div align="center">
-  <img height="200" width="200" src="https://i.pinimg.com/originals/c4/ab/62/c4ab62e1d23e4571b9abb5b3ee44788d.gif"  />
-</div>
-
-###
+<h3 align="center">Full Stack Developer · .NET + React</h3>
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/bruno-piter/" target="_blank">
+  <a href="https://www.linkedin.com/in/bruno-piter-1130aa276/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
   </a>
   <a href="mailto:piterbruno97@gmail.com" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
   </a>
+  <a href="https://github.com/Bruno-Piter" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=GitHub&logo=github&label=&color=181717&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="github logo"  />
+  </a>
+  <br/>
+  <img src="https://komarev.com/ghpvc/?username=Bruno-Piter&style=for-the-badge&color=blueviolet" alt="profile views" />
 </div>
 
 ###
 
+## 💻 ABOUT
+
+<img align="right" width="380" src="./assets/matrix.gif" alt="Matrix code rain" />
+
+```jsx
+import { Developer, Stack, Coffee } from "@bruno/profile";
+
+const bruno = {
+  name: "Bruno Piter Lins de Oliveira",
+  location: "Rio de Janeiro, RJ - Brazil",
+  role: "Full Stack Developer",
+  company: "Domingues e Pinho Contadores",
+  education: [
+    "Software Engineering - USP/Esalq",
+    "Google UX Design Professional",
+  ],
+  languages: ["pt_BR", "en_US"],
+  stack: {
+    backend: ["C#", ".NET Core", "ASP.NET MVC"],
+    frontend: ["React", "TypeScript", "HTML", "CSS"],
+    data: ["SQL Server", "PostgreSQL", "MySQL", "Oracle", "MongoDB"],
+  },
+  concepts: ["POO", "DDD", "CQRS", "MediatR", "Clean Architecture"],
+};
+
+export default function Profile() {
+  return (
+    <Developer {...bruno}>
+      <Stack focus="microservices & clean code" />
+      <Coffee status="always brewing ☕" />
+      {/* Thanks for stopping by — hope you find my work interesting! */}
+    </Developer>
+  );
+}
+```
+
+<br clear="right"/>
+
+###
+
+## 🛠️ Tech Stack
+
+<div align="left">
+  <img src="https://readme-components.vercel.app/api?component=logo&fill=black&logo=react&animation=spin&svgfill=15d8fe" height="48" alt="react (spinning)" />
+  &nbsp;
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,ts,js,html,css,mysql,postgres,mongodb,docker,git,github,postman,azure&perline=14" height="48" alt="tech stack" />
+</div>
+
+<sub>React spins via <a href="https://github.com/harish-sethuraman/readme-components">readme-components</a>; the rest use <a href="https://skillicons.dev">skillicons</a> at the same height to keep one consistent frame.</sub>
+
+###
+
+## 🎮 Let's play Pokémon together ?
+
+<img src="https://toy.cloudreve.org/image" width="300"/>
+
+<img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/> <a href="https://toy.cloudreve.org/control?button=2&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/up.png" width="30"/></a>
+<br><a href="https://toy.cloudreve.org/control?button=1&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/left.png" width="30"/></a><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><a href="https://toy.cloudreve.org/control?button=0&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/right.png" width="30"/></a><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><a href="https://toy.cloudreve.org/control?button=5&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/B.png" width="30"/></a> <a href="https://toy.cloudreve.org/control?button=4&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/A.png" width="30"/></a>
+<br><a href="https://toy.cloudreve.org/control?button=3&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/down.png" width="30"/></a>
+<br><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><a href="https://toy.cloudreve.org/control?button=6&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/select.png" width="74"/></a> <a href="https://toy.cloudreve.org/control?button=7&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/start.png" width="65" /></a>
+
+<details><summary>About this game section</summary>
+
+Click the buttons above to send gamepad input, then refresh the page to see the latest game screen. This is a shared cloud-gaming session powered by the [Gameboy.Live](https://github.com/HFO4/gameboy.live) emulator — everyone plays the same game together.
+</details>
+
+###
+
+## 📊 GitHub Stats
+
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=cs" height="60" alt="csharp logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=react" height="60" alt="react logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=js" height="60" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=jquery" height="60" alt="jquery logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=mysql" height="60" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" height="60" alt="oracle logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=aws" height="60" alt="amazonwebservices logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=azure" height="60" alt="azure logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=dotnet" height="60" alt="dot-net logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" height="60" alt="dotnetcore logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=css" height="60" alt="css logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=git" height="60" alt="git logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=nodejs" height="60" alt="nodejs logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=mongodb" height="60" alt="mongodb logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" height="60" alt="android logo"  />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Bruno-Piter&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" alt="github stats" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
+</div>
+
+###
+
+## 🐍 Contribution Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Bruno-Piter/Bruno-Piter/output/github-contribution-grid-snake.svg">
+  </picture>
 </div>
 
 ###
