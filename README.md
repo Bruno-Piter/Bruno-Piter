@@ -109,6 +109,23 @@ export default function Profile() {
     </td>
   </tr>
   <tr>
+      <td width="50%" valign="top">
+    <br/>
+      <p align="center">
+        <img src="https://img.shields.io/badge/ShinigamiLocker-DC2626?style=for-the-badge&labelColor=111827&color=7F1D1D" alt="ShinigamiLocker" />
+      </p>
+      <p align="center">
+        A study project about ransomware and malware behavior, focused on analysis, learning, and security awareness.
+      </p>
+      <p align="center">
+        <sub><b>Focus:</b> cybersecurity · malware analysis · research</sub>
+      </p>
+      <p align="center">
+        <a href="https://github.com/Bruno-Piter/ShinigamiLocker---malware-ransomware-">
+          <img src="https://img.shields.io/badge/View_repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="ShinigamiLocker repository" />
+        </a>
+      </p>
+    </td>
     <td width="50%" valign="top">
     <br/>
       <p align="center">
@@ -123,23 +140,6 @@ export default function Profile() {
       <p align="center">
         <a href="https://github.com/Bruno-Piter/pokedex-ultra">
           <img src="https://img.shields.io/badge/View_repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="pokedex-ultra repository" />
-        </a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-    <br/>
-      <p align="center">
-        <img src="https://img.shields.io/badge/ShinigamiLocker-DC2626?style=for-the-badge&labelColor=111827&color=7F1D1D" alt="ShinigamiLocker" />
-      </p>
-      <p align="center">
-        A study project about ransomware and malware behavior, focused on analysis, learning, and security awareness.
-      </p>
-      <p align="center">
-        <sub><b>Focus:</b> cybersecurity · malware analysis · research</sub>
-      </p>
-      <p align="center">
-        <a href="https://github.com/Bruno-Piter/ShinigamiLocker---malware-ransomware-">
-          <img src="https://img.shields.io/badge/View_repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="ShinigamiLocker repository" />
         </a>
       </p>
     </td>
