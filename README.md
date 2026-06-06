@@ -1,5 +1,3 @@
-<h1 align="center">こんにちは 👋</h1>
-
 <h3 align="center">Full Stack Developer · .NET + React</h3>
 
 <div align="center">
