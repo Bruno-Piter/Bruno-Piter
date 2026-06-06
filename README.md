@@ -84,6 +84,7 @@ export default function Profile() {
       <p align="center">
         <font color="#ffffff">An evolving intelligent assistant designed to blend automation, a clean interface, and a product experience with personality.</font>
       </p>
+      <br/>
       <p align="center">
         <font color="#ffffff"><sub><b>Focus:</b> AI assistant · automation </sub></font>
       </p>
