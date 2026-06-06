@@ -39,8 +39,8 @@ const bruno = {
   ],
   languages: ["pt_BR", "en_US", "ja_JP"],
   stack: {
-    backend: ["C#", ".NET Core", "ASP.NET MVC"],
     frontend: ["React", "TypeScript", "HTML", "CSS"],
+    backend: ["C#", ".NET Core", "ASP.NET MVC"],
     data: ["SQL Server", "PostgreSQL", "MySQL", "Oracle", "MongoDB"],
   },
   concepts: ["POO", "DDD", "CQRS", "MediatR", "Clean Architecture"],
