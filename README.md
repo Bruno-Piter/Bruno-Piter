@@ -156,34 +156,58 @@ export default function Profile() {
 
 <div align="center">
 
-<img src="https://toy.cloudreve.org/image" width="300"/>
-
-<table>
+<table width="390">
   <tr>
-    <td width="36"></td>
-    <td width="36" align="center"><a href="https://toy.cloudreve.org/control?button=2&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/up.png" width="30" alt="up"/></a></td>
-    <td width="36"></td>
-    <td width="36"></td>
-    <td width="36"></td>
-  </tr>
-  <tr>
-    <td width="36" align="center"><a href="https://toy.cloudreve.org/control?button=1&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/left.png" width="30" alt="left"/></a></td>
-    <td width="36"></td>
-    <td width="36" align="center"><a href="https://toy.cloudreve.org/control?button=0&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/right.png" width="30" alt="right"/></a></td>
-    <td width="36" align="center"><a href="https://toy.cloudreve.org/control?button=5&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/B.png" width="30" alt="B"/></a></td>
-    <td width="36" align="center"><a href="https://toy.cloudreve.org/control?button=4&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/A.png" width="30" alt="A"/></a></td>
-  </tr>
-  <tr>
-    <td width="36"></td>
-    <td width="36" align="center"><a href="https://toy.cloudreve.org/control?button=3&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/down.png" width="30" alt="down"/></a></td>
-    <td width="36"></td>
-    <td width="36"></td>
-    <td width="36"></td>
-  </tr>
-  <tr>
-    <td colspan="5" align="center">
-      <a href="https://toy.cloudreve.org/control?button=6&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/select.png" width="74" alt="select"/></a>
-      <a href="https://toy.cloudreve.org/control?button=7&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/start.png" width="65" alt="start"/></a>
+    <td align="center" bgcolor="#E53935">
+      <br/>
+      <table width="315">
+        <tr>
+          <td bgcolor="#151515" align="center">
+            <br/>
+            <img src="https://toy.cloudreve.org/image" width="270" alt="Pokémon game screen"/>
+            <br/>
+            <sub><font color="#9CA3AF"><b>GAME BOY</b></font></sub>
+            <br/>
+          </td>
+        </tr>
+      </table>
+      <br/>
+      <table width="315">
+        <tr>
+          <td width="120" align="center">
+            <table>
+              <tr>
+                <td width="34"></td>
+                <td width="34" align="center"><a href="https://toy.cloudreve.org/control?button=2&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/up.png" width="30" alt="up"/></a></td>
+                <td width="34"></td>
+              </tr>
+              <tr>
+                <td width="34" align="center"><a href="https://toy.cloudreve.org/control?button=1&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/left.png" width="30" alt="left"/></a></td>
+                <td width="34"></td>
+                <td width="34" align="center"><a href="https://toy.cloudreve.org/control?button=0&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/right.png" width="30" alt="right"/></a></td>
+              </tr>
+              <tr>
+                <td width="34"></td>
+                <td width="34" align="center"><a href="https://toy.cloudreve.org/control?button=3&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/down.png" width="30" alt="down"/></a></td>
+                <td width="34"></td>
+              </tr>
+            </table>
+          </td>
+          <td width="75" align="center">
+            <br/>
+            <a href="https://toy.cloudreve.org/control?button=6&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/select.png" width="70" alt="select"/></a>
+            <br/>
+            <a href="https://toy.cloudreve.org/control?button=7&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/start.png" width="62" alt="start"/></a>
+          </td>
+          <td width="120" align="center">
+            <br/>
+            <a href="https://toy.cloudreve.org/control?button=5&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/B.png" width="34" alt="B"/></a>
+            <img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="12" alt=""/>
+            <a href="https://toy.cloudreve.org/control?button=4&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/A.png" width="34" alt="A"/></a>
+          </td>
+        </tr>
+      </table>
+      <br/>
     </td>
   </tr>
 </table>
