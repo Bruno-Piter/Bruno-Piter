@@ -34,8 +34,8 @@ const bruno = {
   name: "Bruno Piter",
   role: "Full Stack Developer",
   currentlyLearning: [
-    { name: "Software Engineering - USP/Esalq", progress: "██░░░░░░░░ 20%" },
-    { name: "Google UX Design Professional", progress: "██░░░░░░░░ 20%" },
+    { name: "Software Engineering - USP/Esalq", progress: "██········ 20%" },
+    { name: "Google UX Design Professional", progress: "██········ 20%" },
   ],
   languages: ["pt_BR", "en_US", "ja_JP"],
   stack: {
