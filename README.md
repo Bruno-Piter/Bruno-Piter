@@ -33,9 +33,9 @@ import { Developer, Monster } from "@bruno/profile";
 const bruno = {
   name: "Bruno Piter",
   role: "Full Stack Developer",
-  education: [
-    "Software Engineering - USP/Esalq",
-    "Google UX Design Professional",
+  currentlyLearning: [
+    { name: "Software Engineering - USP/Esalq", progress: "██░░░░░░░░ 20%" },
+    { name: "Google UX Design Professional", progress: "██░░░░░░░░ 20%" },
   ],
   languages: ["pt_BR", "en_US", "ja_JP"],
   stack: {
