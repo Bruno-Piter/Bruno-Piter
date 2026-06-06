@@ -69,7 +69,91 @@ export default function Profile() {
 
 ###
 
+## 🚀 Featured Projects
+
+<br/>
+
+<table>
+  <tr>
+    <td width="50%" valign="top" bgcolor="#350952">
+    <br/>
+      <p align="center">
+        <img src="https://img.shields.io/badge/🌸 A.I.K.O. 🌸-9D4EDD?style=for-the-badge&labelColor=ffffff&color=ffffff" 
+        alt="A.I.K.O." />
+      </p>
+      <p align="center">
+        <font color="#ffffff">An evolving intelligent assistant designed to blend automation, a clean interface, and a product experience with personality.</font>
+      </p>
+      <p align="center">
+        <font color="#ffffff"><sub><b>Focus:</b> AI assistant · automation </sub></font>
+      </p>
+      <p align="center">
+        <a href="https://github.com/Bruno-Piter/A.I.K.O.">
+          <img src="https://img.shields.io/badge/Coming_Soon-210716?style=for-the-badge&logo=github&logoColor=white" alt="A.I.K.O. repository" />
+        </a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+    <br/>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Mission_Control-00D4FF?style=for-the-badge&labelColor=0B1020&color=2563EB" alt="Mission-Control" />
+      </p>
+      <p align="center">
+        A command dashboard for organizing flows, monitoring actions, and centralizing decisions in one control-room experience.
+      </p>
+      <p align="center">
+        <sub><b>Focus:</b> dashboard · orchestration · workflow</sub>
+      </p>
+      <p align="center">
+        <a href="https://github.com/Bruno-Piter/Mission-Control">
+          <img src="https://img.shields.io/badge/View_repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Mission-Control repository" />
+        </a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+    <br/>
+      <p align="center">
+        <img src="https://img.shields.io/badge/pokedex_ultra-FFCB05?style=for-the-badge&labelColor=1F2937&color=EF4444" alt="pokedex-ultra" />
+      </p>
+      <p align="center">
+        A Pokémon-inspired experience for exploring data, details, and navigation through a more playful visual interface.
+      </p>
+      <p align="center">
+        <sub><b>Focus:</b> UI · API consumption · interactive catalog</sub>
+      </p>
+      <p align="center">
+        <a href="https://github.com/Bruno-Piter/pokedex-ultra">
+          <img src="https://img.shields.io/badge/View_repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="pokedex-ultra repository" />
+        </a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+    <br/>
+      <p align="center">
+        <img src="https://img.shields.io/badge/ShinigamiLocker-DC2626?style=for-the-badge&labelColor=111827&color=7F1D1D" alt="ShinigamiLocker" />
+      </p>
+      <p align="center">
+        A study project about ransomware and malware behavior, focused on analysis, learning, and security awareness.
+      </p>
+      <p align="center">
+        <sub><b>Focus:</b> cybersecurity · malware analysis · research</sub>
+      </p>
+      <p align="center">
+        <a href="https://github.com/Bruno-Piter/ShinigamiLocker---malware-ransomware-">
+          <img src="https://img.shields.io/badge/View_repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="ShinigamiLocker repository" />
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+###
+
 ## 🎮 Let's play Pokémon together ?
+
+<div align="center">
 
 <img src="https://toy.cloudreve.org/image" width="300"/>
 
@@ -77,5 +161,7 @@ export default function Profile() {
 <br><a href="https://toy.cloudreve.org/control?button=1&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/left.png" width="30"/></a><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><a href="https://toy.cloudreve.org/control?button=0&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/right.png" width="30"/></a><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><a href="https://toy.cloudreve.org/control?button=5&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/B.png" width="30"/></a> <a href="https://toy.cloudreve.org/control?button=4&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/A.png" width="30"/></a>
 <br><a href="https://toy.cloudreve.org/control?button=3&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/down.png" width="30"/></a>
 <br><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/blank.png" width="30"/><a href="https://toy.cloudreve.org/control?button=6&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/select.png" width="74"/></a> <a href="https://toy.cloudreve.org/control?button=7&callback=https://github.com/Bruno-Piter"><img src="https://raw.githubusercontent.com/HFO4/HFO4/master/img/start.png" width="65" /></a>
+
+</div>
 
 ###
