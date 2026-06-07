@@ -16,7 +16,7 @@
 
 <div align="center">
   <img src="https://readme-components.vercel.app/api?component=logo&fill=black&logo=react&animation=spin&svgfill=15d8fe" height="32" alt="react (spinning)" />
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,ts,js,html,css,mysql,postgres,mongodb,docker,git,github,postman,azure&perline=20" height="32" alt="tech stack" />
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,azure,ts,js,html,css,mysql,postgres,mongodb,docker,git,github,postman&perline=20" height="32" alt="tech stack" />
 </div>
 
 <table>
