@@ -45,7 +45,7 @@ const bruno = {
 export default function Profile() {
   return (
     <Developer {...bruno}>
-      <Monster status="fueling the code ⚡" />
+      <Monster status="fueling the code-⚡" />
       {/* Thanks for stopping by — hope you find my work interesting! */}
     </Developer>
   );
