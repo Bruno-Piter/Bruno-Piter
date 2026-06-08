@@ -51,8 +51,13 @@ export default function Profile() {
 }
 ```
 
-<br/>
-<img width="420" height="160" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02.gif?v=3" alt="Snowfall" />
+<table width="100%">
+<tr>
+<td>
+<img width="100%" height="285" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02.gif?v=4" alt="Snowfall" />
+</td>
+</tr>
+</table>
 
 </td>
 <td valign="top" width="42%" align="center">
