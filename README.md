@@ -51,6 +51,9 @@ export default function Profile() {
 }
 ```
 
+<br/>
+<img width="100%" height="310" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02.gif?v=1" alt="Snowfall" />
+
 </td>
 <td valign="top" width="42%" align="center">
   <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=60&r=202606041215" alt="most used languages" />
