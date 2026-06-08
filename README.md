@@ -52,7 +52,7 @@ export default function Profile() {
 ```
 
 <br/>
-<img width="100%" height="310" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02.gif?v=1" alt="Snowfall" />
+<img width="500" height="200" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02.gif?v=2" alt="Snowfall" />
 
 </td>
 <td valign="top" width="42%" align="center">
