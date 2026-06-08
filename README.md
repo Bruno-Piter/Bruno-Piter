@@ -33,7 +33,6 @@ const bruno = {
     { name: "Software Engineering - USP/Esalq", progress: "██········ 20%" },
     { name: "Google UX Design Professional", progress: "██········ 20%" },
   ],
-  languages: ["pt_BR", "en_US", "ja_JP"],
   stack: {
     frontend: ["React", "TypeScript", "HTML", "CSS"],
     backend: ["C#", ".NET Core", "ASP.NET MVC"],
@@ -45,7 +44,7 @@ const bruno = {
 export default function Profile() {
   return (
     <Developer {...bruno}>
-      <Monster status="fueling the code-⚡" />
+      <Monster status=" ~⚡~ " />
       {/* Thanks for stopping by — hope you find my work interesting! */}
     </Developer>
   );
