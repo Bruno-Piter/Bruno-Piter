@@ -1,10 +1,6 @@
 <div align="center">
   <a href="https://portfolio-bruno-piter.vercel.app/en" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Live-00D4FF?style=for-the-badge&logo=vercel&logoColor=white&labelColor=03050c" height="40" alt="Portfolio" />
-  </a>
-  <br/>
-  <a href="https://portfolio-bruno-piter.vercel.app/en" target="_blank">
-    <b>portfolio-bruno-piter.vercel.app</b>
+    <img src="https://img.shields.io/badge/%E2%9D%84_Portfolio_%E2%9D%84-00D4FF?style=for-the-badge" height="40" alt="Portfolio" />
   </a>
   <br/><br/>
   <a href="https://www.linkedin.com/in/bruno-piter-1130aa276/" target="_blank">
