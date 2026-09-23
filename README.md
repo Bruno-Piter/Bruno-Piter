@@ -34,8 +34,8 @@ const bruno = {
   name: "Bruno Piter",
   role: "Full Stack Developer",
   currentlyLearning: [
-    { name: "Software Engineering - USP/Esalq", progress: "██········ 20%" },
-    { name: "Google UX Design Professional", progress: "██········ 20%" },
+    { name: "Software Engineering - USP/Esalq", progress: "██········ 22%" },
+    { name: "Google UX Design Professional", progress: "██········ 22%" },
   ],
   stack: {
     frontend: ["React", "TypeScript", "HTML", "CSS"],
@@ -59,9 +59,9 @@ export default function Profile() {
 
 </td>
 <td valign="top" width="42%" align="center">
-  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=60&r=202606041215" alt="most used languages" />
+  <img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
   <br/>
-  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&cache_seconds=60&r=202606041215" alt="github stats" />
+  <img height="165" src="https://github-stats-extended.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="github stats" />
   <br/>
   <img width="280" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/mewtwo.gif?v=1" alt="Baby Mewtwo" />
 </td>
