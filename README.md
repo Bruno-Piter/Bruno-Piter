@@ -59,9 +59,9 @@ export default function Profile() {
 
 </td>
 <td valign="top" width="42%" align="center">
-  <img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="most used languages" />
+  <img width="467" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=467" alt="most used languages" />
   <br/>
-  <img height="165" src="https://github-stats-extended.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="github stats" />
+  <img width="467" src="https://github-stats-extended.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&card_width=467" alt="github stats" />
   <br/>
   <img width="280" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/mewtwo.gif?v=1" alt="Baby Mewtwo" />
 </td>
