@@ -26,10 +26,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/visual-dark.svg assets/visual-light.svg
+          git add assets/visual-dark.svg assets/visual-light.svg README.md
           if git diff --staged --quiet; then
             echo "Progresso inalterado."
           else
-            git commit -m "Atualiza o progresso dos cursos"
+            git commit -m "Atualiza o progresso do perfil"
             git push
           fi
