@@ -23,50 +23,11 @@
   <img src="https://skillicons.dev/icons?i=cs,dotnet,azure,ts,js,html,css,mysql,postgres,mongodb,docker,git,github,postman&perline=20" height="32" alt="tech stack" />
 </div>
 
-<table>
-<tr>
-<td valign="top" width="48%">
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/visual-dark.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="assets/visual-light.svg?v=2">
-  <img width="100%" alt="Bruno Piter" src="assets/visual-light.svg?v=2">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/visual-dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="assets/visual-light.svg?v=3">
+  <img width="100%" alt="Bruno Piter" src="assets/visual-light.svg?v=3">
 </picture>
-
-</td>
-<td valign="top" width="52%">
-
-```jsx
-import { Developer, Monster } from "@bruno/profile";
-
-const bruno = {
-  name: "Bruno Piter",
-  role: "Full Stack Developer",
-  currentlyLearning: [
-    { name: "Software Engineering - USP/Esalq", progress: "██········ 22%" },
-    { name: "Google UX Design Professional", progress: "██········ 22%" },
-  ],
-  stack: {
-    frontend: ["React", "TypeScript", "HTML", "CSS"],
-    backend: ["C#", ".NET Core", "ASP.NET MVC"],
-    data: ["SQL Server", "PostgreSQL", "MySQL", "Oracle", "MongoDB"],
-  },
-  concepts: ["POO", "DDD", "CQRS", "MediatR", "Clean Architecture"],
-};
-
-export default function Profile() {
-  return (
-    <Developer {...bruno}>
-      <Monster status=" ~⚡~ " />
-      {/* Thanks for stopping by — hope you find my work interesting! */}
-    </Developer>
-  );
-}
-```
-
-</td>
-</tr>
-</table>
 
 <table>
 <tr>

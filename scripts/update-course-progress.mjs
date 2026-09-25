@@ -29,21 +29,25 @@ function bar(percent) {
   return `${"█".repeat(filled)}${"·".repeat(10 - filled)} ${percent}%`;
 }
 
-const readmePath = new URL("../README.md", import.meta.url);
-let readme = readFileSync(readmePath, "utf8");
 const label = bar(percentage(saoPauloTodayUtc()));
+const files = ["visual-dark.svg", "visual-light.svg"].map(
+  (name) => new URL(`../assets/${name}`, import.meta.url),
+);
 
-for (const name of COURSES) {
-  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const pattern = new RegExp(
-    `(\\{ name: "${escaped}", progress: ")[^"]+(" \\})`,
-  );
-  if (!pattern.test(readme)) {
-    console.error(`Curso não encontrado no README: ${name}`);
-    process.exit(1);
+for (const file of files) {
+  let svg = readFileSync(file, "utf8");
+  for (const name of COURSES) {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const pattern = new RegExp(
+      `(\\{ name: "${escaped}", progress: ")[^"]+(" \\})`,
+    );
+    if (!pattern.test(svg)) {
+      console.error(`Curso não encontrado (${name}) em ${file.pathname}`);
+      process.exit(1);
+    }
+    svg = svg.replace(pattern, `$1${label}$2`);
   }
-  readme = readme.replace(pattern, `$1${label}$2`);
+  writeFileSync(file, svg);
 }
 
-writeFileSync(readmePath, readme);
 console.log(label);
