@@ -50,4 +50,26 @@ for (const file of files) {
   writeFileSync(file, svg);
 }
 
+const readmePath = new URL("../README.md", import.meta.url);
+const readme = readFileSync(readmePath, "utf8");
+const views = await profileViewsBadge(readme);
+if (views !== readme) writeFileSync(readmePath, views);
+
 console.log(label);
+
+async function profileViewsBadge(readme) {
+  const pattern = /https:\/\/img\.shields\.io\/badge\/profile%20views-[^"'\s]+/;
+  if (!pattern.test(readme)) return readme;
+  try {
+    const response = await fetch(
+      "https://komarev.com/ghpvc/?username=Bruno-Piter&style=flat",
+    );
+    if (!response.ok) return readme;
+    const match = (await response.text()).match(/PROFILE VIEWS:\s*([\d,]+)/);
+    if (!match) return readme;
+    const badge = `https://img.shields.io/badge/profile%20views-${encodeURIComponent(match[1])}-blueviolet?style=for-the-badge`;
+    return readme.replace(pattern, badge);
+  } catch {
+    return readme;
+  }
+}

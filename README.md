@@ -13,7 +13,8 @@
     <img src="https://img.shields.io/static/v1?message=GitHub&logo=github&label=&color=181717&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="github logo"  />
   </a>
   <br/>
-  <img src="https://komarev.com/ghpvc/?username=Bruno-Piter&style=for-the-badge&color=blueviolet" alt="profile views" />
+  <img src="https://img.shields.io/badge/profile%20views-1%2C872-blueviolet?style=for-the-badge" height="28" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=Bruno-Piter&style=pixel" alt="" width="1" height="1" />
 </div>
 
 ---
