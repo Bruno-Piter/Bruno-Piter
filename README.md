@@ -25,16 +25,16 @@
 
 <table>
 <tr>
-<td valign="top" width="46%">
+<td valign="top" width="48%">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/visual-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/visual-light.svg">
-  <img width="100%" alt="Bruno Piter" src="assets/visual-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/visual-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="assets/visual-light.svg?v=2">
+  <img width="100%" alt="Bruno Piter" src="assets/visual-light.svg?v=2">
 </picture>
 
 </td>
-<td valign="top" width="54%">
+<td valign="top" width="52%">
 
 ```jsx
 import { Developer, Monster } from "@bruno/profile";
@@ -66,21 +66,23 @@ export default function Profile() {
 
 </td>
 </tr>
+</table>
+
+<table>
 <tr>
-<td valign="top">
-
-<img width="100%" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02-banner.gif?v=1" alt="Snowfall" />
-
+<td valign="middle" width="58%">
+  <img width="530" height="285" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02-banner.gif?v=1" alt="Snowfall" />
 </td>
-<td valign="top" align="center">
-  <img width="467" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=467" alt="most used languages" />
-  <br/>
-  <img width="467" src="https://github-stats-extended.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&card_width=467" alt="github stats" />
-  <br/>
+<td valign="middle" width="42%" align="center">
   <img width="280" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/mewtwo.gif?v=1" alt="Baby Mewtwo" />
 </td>
 </tr>
 </table>
+
+<div align="center">
+  <img width="49%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=467" alt="most used languages" />
+  <img width="49%" src="https://github-stats-extended.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&card_width=467" alt="github stats" />
+</div>
 
 ###
 

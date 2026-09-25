@@ -347,6 +347,29 @@ def kmeans(points: np.ndarray, k: int, rng: np.random.Generator, iters: int = 16
     return labels, centers
 
 
+def fade_in(index: int, count: int) -> str:
+    """Pontos espalhados engrossam juntos, em vez de a foto aparecer pronta."""
+    start = (index / max(count - 1, 1)) * 1.7
+    end = start + 0.7
+    points = [(0.0, 0), (start, 0), (end, 1), (3.0, 1), (4.3, 0), (DUR, 0)]
+    times: list[float] = []
+    values: list[int] = []
+    for second, opacity in points:
+        fraction = 1.0 if second >= DUR else second / DUR
+        if times and fraction <= times[-1] + 1e-4:
+            values[-1] = opacity
+            continue
+        times.append(fraction)
+        values.append(opacity)
+    times[-1] = 1.0
+    key = ";".join(f"{item:.4f}" for item in times)
+    vals = ";".join(str(item) for item in values)
+    return (
+        f'<animate attributeName="opacity" values="{vals}" keyTimes="{key}" '
+        f'dur="{DUR}s" repeatCount="indefinite"/>'
+    )
+
+
 def key_times() -> str:
     parts = [f"{t / DUR:.4f}" for t in MARKS]
     parts[-1] = "1"
@@ -398,15 +421,17 @@ def build_svg(theme: str, groups: list[np.ndarray], logo_tracks: np.ndarray, pit
         f'<text x="{FRAME["x"] + 14}" y="{FRAME["y"] + 20}" font-size="11" letter-spacing="1.5" fill="{pal["cyan"]}">VISUAL.MAP</text>',
         f'<clipPath id="map"><rect x="{AREA["x"]}" y="{AREA["y"]}" width="{AREA["w"]}" height="{AREA["h"]}"/></clipPath>',
         '<g clip-path="url(#map)">',
-        f'<g><animate attributeName="opacity" values="1;1;0;0;0;0;0;0;1" keyTimes="{times}" dur="{DUR}s" repeatCount="indefinite"/>',
+        "<g>",
     ]
-    for tops, drift in groups:
+    total = max(len(groups), 1)
+    for index, (tops, drift) in enumerate(groups):
         dx, dy = drift
         values = (
             f"0 0;0 0;{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};"
             f"{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};0 0"
         )
-        parts.append("<g>")
+        parts.append('<g opacity="0">')
+        parts.append(fade_in(index, total))
         parts.append(
             f'<animateTransform attributeName="transform" type="translate" values="{values}" '
             f'keyTimes="{times}" dur="{DUR}s" repeatCount="indefinite" calcMode="spline" keySplines="{ease}"/>'
@@ -517,13 +542,14 @@ def main():
     logo_centroid = react.mean(axis=0)
     drift = DRIFT * (logo_centroid - centers)
     drift += rng.normal(0, NOISE, size=drift.shape)
-    labels, drift_centers = kmeans(drift, GROUPS, rng)
+    labels = np.empty(len(top), dtype=np.int32)
+    labels[rng.permutation(len(top))] = np.arange(len(top)) % GROUPS
     groups = []
-    for j in range(len(drift_centers)):
+    for j in range(GROUPS):
         chosen = labels == j
         if not chosen.any():
             continue
-        groups.append((top[chosen], drift_centers[j]))
+        groups.append((top[chosen], drift[chosen].mean(axis=0)))
     print(f"grupos {len(groups)}  viajantes {len(react)}")
 
     save_previews(pitch, top, react, csharp, snow, crop)
