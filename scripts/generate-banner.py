@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import math
 import os
+import re
 from pathlib import Path
 
 import numpy as np
@@ -23,8 +24,8 @@ OUT_DARK = ROOT / "assets" / "visual-dark.svg"
 OUT_LIGHT = ROOT / "assets" / "visual-light.svg"
 PREVIEW = Path(os.environ.get("TEMP", ".")) / "banner-previews"
 
-W, H = 520, 680
-COLS = 180
+W, H = 1040, 700
+COLS = 136
 TRAVELLERS = 640
 GROUPS = 64
 DUR = 14.2
@@ -35,12 +36,13 @@ DRIFT = 0.42
 NOISE = 6.0
 SEED = 7
 
-FRAME = {"x": 16, "y": 54, "w": W - 32, "h": H - 70}
+FRAME = {"x": 14, "y": 52, "w": 412, "h": H - 66}
+CODE = {"x": 438, "y": 52, "w": W - 452, "h": H - 66}
 AREA = {
-    "x": FRAME["x"] + 14,
-    "y": FRAME["y"] + 34,
-    "w": FRAME["w"] - 28,
-    "h": FRAME["h"] - 48,
+    "x": FRAME["x"] + 12,
+    "y": FRAME["y"] + 32,
+    "w": FRAME["w"] - 24,
+    "h": FRAME["h"] - 44,
 }
 
 THEMES = {
@@ -59,6 +61,12 @@ THEMES = {
         "bg_rgb": (7, 11, 22),
         "panel_rgb": (12, 20, 40),
         "cyan_rgb": (34, 211, 238),
+        "keyword": "#FB7185",
+        "string": "#34D399",
+        "tag": "#7DD3FC",
+        "comment": "#64748B",
+        "punct": "#94A3B8",
+        "plain": "#E2E8F0",
     },
     "light": {
         "bg": "#F8FAFC",
@@ -75,6 +83,12 @@ THEMES = {
         "bg_rgb": (248, 250, 252),
         "panel_rgb": (255, 255, 255),
         "cyan_rgb": (8, 145, 178),
+        "keyword": "#E11D48",
+        "string": "#047857",
+        "tag": "#0369A1",
+        "comment": "#94A3B8",
+        "punct": "#64748B",
+        "plain": "#0F172A",
     },
 }
 
@@ -380,13 +394,9 @@ def splines() -> str:
     return ";".join(["0.45 0 0.18 1"] * (len(MARKS) - 1))
 
 
-def esc(text: str) -> str:
-    return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
+def esc(text: str, quotes: bool = True) -> str:
+    out = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return out.replace('"', "&quot;") if quotes else out
 
 
 def path_for(tops: np.ndarray, size: float) -> str:
@@ -397,7 +407,121 @@ def path_for(tops: np.ndarray, size: float) -> str:
     return "".join(chunks)
 
 
-def build_svg(theme: str, groups: list[np.ndarray], logo_tracks: np.ndarray, pitch: float) -> str:
+KEYWORDS = {"import", "from", "const", "export", "default", "function", "return"}
+
+
+def profile_source(progress: str) -> str:
+    return f"""import {{ Developer, Monster }} from "@bruno/profile";
+
+const bruno = {{
+  name: "Bruno Piter",
+  role: "Full Stack Developer",
+  currentlyLearning: [
+    {{ name: "Software Engineering - USP/Esalq", progress: "{progress}" }},
+    {{ name: "Google UX Design Professional", progress: "{progress}" }},
+  ],
+  stack: {{
+    frontend: ["React", "TypeScript", "HTML", "CSS"],
+    backend: ["C#", ".NET Core", "ASP.NET MVC"],
+    data: ["SQL Server", "PostgreSQL", "MySQL", "Oracle", "MongoDB"],
+  }},
+  concepts: ["POO", "DDD", "CQRS", "MediatR", "Clean Architecture"],
+}};
+
+export default function Profile() {{
+  return (
+    <Developer {{...bruno}}>
+      <Monster status=" ~⚡~ " />
+      {{/* Thanks for stopping by — hope you find my work interesting! */}}
+    </Developer>
+  );
+}}"""
+
+
+def live_progress() -> str:
+    default = "██········ 22%"
+    if not OUT_DARK.exists():
+        return default
+    match = re.search(r'progress: "([^"]+)"', OUT_DARK.read_text(encoding="utf-8"))
+    return match.group(1) if match else default
+
+
+def color_tokens(line: str, pal: dict) -> list[tuple[str, str]]:
+    if not line:
+        return []
+    parts: list[tuple[str, str]] = []
+    index = 0
+    while index < len(line):
+        if line.startswith(("//", "/*", "{/*"), index):
+            parts.append((line[index:], pal["comment"]))
+            break
+        char = line[index]
+        if char == '"':
+            end = line.find('"', index + 1)
+            end = len(line) if end < 0 else end + 1
+            parts.append((line[index:end], pal["string"]))
+            index = end
+            continue
+        if char.isspace():
+            end = index + 1
+            while end < len(line) and line[end].isspace():
+                end += 1
+            parts.append((line[index:end], pal["plain"]))
+            index = end
+            continue
+        if char.isalpha() or char == "_":
+            end = index + 1
+            while end < len(line) and (line[end].isalnum() or line[end] in "_."):
+                end += 1
+            word = line[index:end]
+            if word in KEYWORDS:
+                color = pal["keyword"]
+            elif word[:1].isupper():
+                color = pal["tag"]
+            else:
+                color = pal["plain"]
+            parts.append((word, color))
+            index = end
+            continue
+        parts.append((char, pal["punct"]))
+        index += 1
+    return parts
+
+
+def code_svg(theme: str, progress: str) -> str:
+    pal = THEMES[theme]
+    lines = profile_source(progress).splitlines()
+    size = 13
+    leading = 22
+    x = CODE["x"] + 16
+    y = CODE["y"] + 48
+    max_w = CODE["w"] - 32
+    font = ImageFont.truetype(r"C:\Windows\Fonts\consola.ttf", size)
+    chunks = [
+        f'<text x="{CODE["x"] + 16}" y="{CODE["y"] + 22}" font-size="11" letter-spacing="1.2" fill="{pal["cyan"]}">profile.jsx</text>'
+    ]
+    for offset, line in enumerate(lines):
+        baseline = y + offset * leading
+        width = font.getlength(line) if line else 0
+        squeeze = (
+            f' textLength="{max_w:.0f}" lengthAdjust="spacingAndGlyphs"'
+            if width > max_w * 0.82
+            else ""
+        )
+        if "progress:" in line:
+            body = f'<tspan fill="{pal["plain"]}">{esc(line, quotes=False)}</tspan>'
+        else:
+            body = "".join(
+                f'<tspan fill="{color}">{esc(text, quotes=False)}</tspan>'
+                for text, color in color_tokens(line, pal)
+            )
+        chunks.append(
+            f'<text xml:space="preserve" x="{x}" y="{baseline}" font-size="{size}"{squeeze}>{body}</text>'
+        )
+    return "".join(chunks)
+
+
+def build_svg(theme: str, groups: list, logo_tracks: np.ndarray, pitch: float, progress: str) -> str:
     pal = THEMES[theme]
     times = key_times()
     ease = splines()
@@ -412,13 +536,16 @@ def build_svg(theme: str, groups: list[np.ndarray], logo_tracks: np.ndarray, pit
         '<circle cx="48" cy="28" r="6" fill="#FEBC2E"/>',
         '<circle cx="68" cy="28" r="6" fill="#28C840"/>',
         f'<text x="{W / 2:.0f}" y="32" text-anchor="middle" font-size="12" fill="{pal["muted"]}">'
-        f'{esc("bruno-piter ~ % ./visual.sh --live")}</text>',
+        f'{esc("bruno-piter ~ % ./profile.sh --live")}</text>',
         f'<circle cx="{W - 58}" cy="27" r="3.5" fill="{pal["live"]}">'
         f'<animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle>',
         f'<text x="{W - 18}" y="31" text-anchor="end" font-size="11" fill="{pal["live"]}">LIVE</text>',
         f'<rect x="{FRAME["x"]}" y="{FRAME["y"]}" width="{FRAME["w"]}" height="{FRAME["h"]}" rx="12" '
         f'fill="{pal["panel"]}" stroke="{pal["frame"]}"/>',
         f'<text x="{FRAME["x"] + 14}" y="{FRAME["y"] + 20}" font-size="11" letter-spacing="1.5" fill="{pal["cyan"]}">VISUAL.MAP</text>',
+        f'<rect x="{CODE["x"]}" y="{CODE["y"]}" width="{CODE["w"]}" height="{CODE["h"]}" rx="12" '
+        f'fill="{pal["panel"]}" stroke="{pal["frame"]}"/>',
+        code_svg(theme, progress),
         f'<clipPath id="map"><rect x="{AREA["x"]}" y="{AREA["y"]}" width="{AREA["w"]}" height="{AREA["h"]}"/></clipPath>',
         '<g clip-path="url(#map)">',
         "<g>",
@@ -553,8 +680,9 @@ def main():
     print(f"grupos {len(groups)}  viajantes {len(react)}")
 
     save_previews(pitch, top, react, csharp, snow, crop)
-    dark = build_svg("dark", groups, tracks, pitch)
-    light = build_svg("light", groups, tracks, pitch)
+    progress = live_progress()
+    dark = build_svg("dark", groups, tracks, pitch, progress)
+    light = build_svg("light", groups, tracks, pitch, progress)
     OUT_DARK.write_text(dark, encoding="utf-8")
     OUT_LIGHT.write_text(light, encoding="utf-8")
     print(f"{OUT_DARK.name} {len(dark) // 1024}KB")
