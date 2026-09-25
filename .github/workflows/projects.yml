@@ -1,0 +1,41 @@
+name: Atualizar painel de projetos
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "projects.json"
+      - ".github/scripts/generate_projects.py"
+      - ".github/scripts/fetch_data.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Buscar dados dos repositórios
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/fetch_data.py
+
+      - name: Gerar painel
+        run: python3 .github/scripts/generate_projects.py merged.json assets
+
+      - name: Publicar se o painel mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/projects-dark.svg assets/projects-light.svg
+          if git diff --staged --quiet; then
+            echo "Painel inalterado."
+          else
+            git commit -m "Atualiza o painel de projetos"
+            git push
+          fi

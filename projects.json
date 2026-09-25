@@ -1,0 +1,26 @@
+[
+  {
+    "name": "A.I.K.O.",
+    "repo": "Bruno-Piter/A.I.K.O.",
+    "description": "An evolving assistant blending automation, a clean interface, and personality.",
+    "tags": ["AI", "automation", "soon"]
+  },
+  {
+    "name": "Mission Control",
+    "repo": "Bruno-Piter/Mission-Control",
+    "description": "A command dashboard for flows, actions, and decisions in one control room.",
+    "tags": ["dashboard", "workflow", "orchestration"]
+  },
+  {
+    "name": "ShinigamiLocker",
+    "repo": "Bruno-Piter/ShinigamiLocker---malware-ransomware-",
+    "description": "A study of ransomware behavior, built for analysis and security awareness.",
+    "tags": ["security", "malware", "research"]
+  },
+  {
+    "name": "pokedex-ultra",
+    "repo": "Bruno-Piter/pokedex-ultra",
+    "description": "A Pokémon-inspired catalog for exploring data through a playful interface.",
+    "tags": ["UI", "API", "catalog"]
+  }
+]
