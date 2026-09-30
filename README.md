@@ -33,7 +33,7 @@
 <table>
 <tr>
 <td valign="top" width="480" align="center">
-  <img width="480" alt="GitHub metrics" src="assets/github-metrics.svg?v=1" />
+  <img width="480" alt="GitHub metrics" src="assets/github-metrics.svg?v=2" />
 </td>
 <td valign="top" align="center">
   <img width="400" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02-banner.gif?v=1" alt="Snowfall" />
