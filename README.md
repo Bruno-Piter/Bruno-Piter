@@ -30,17 +30,15 @@
   <img width="100%" alt="Bruno Piter" src="assets/visual-light.svg?v=3">
 </picture>
 
-<div align="center">
-  <img width="480" alt="GitHub metrics" src="assets/github-metrics.svg?v=1" />
-</div>
-
 <table>
 <tr>
-<td valign="middle" width="58%">
-  <img width="530" height="285" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02-banner.gif?v=1" alt="Snowfall" />
+<td valign="top" width="480" align="center">
+  <img width="480" alt="GitHub metrics" src="assets/github-metrics.svg?v=1" />
 </td>
-<td valign="middle" width="42%" align="center">
-  <img width="280" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/mewtwo.gif?v=1" alt="Baby Mewtwo" />
+<td valign="top" align="center">
+  <img width="400" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/snow02-banner.gif?v=1" alt="Snowfall" />
+  <br/><br/>
+  <img width="240" src="https://github.com/Bruno-Piter/Bruno-Piter/raw/main/assets/mewtwo.gif?v=1" alt="Baby Mewtwo" />
 </td>
 </tr>
 </table>
