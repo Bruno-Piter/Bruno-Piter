@@ -30,6 +30,10 @@
   <img width="100%" alt="Bruno Piter" src="assets/visual-light.svg?v=3">
 </picture>
 
+<div align="center">
+  <img width="480" alt="GitHub metrics" src="assets/github-metrics.svg" />
+</div>
+
 <table>
 <tr>
 <td valign="middle" width="58%">
