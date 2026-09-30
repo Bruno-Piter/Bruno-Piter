@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: assets/github-metrics.svg
+          filename: assets/metrics.svg
           user: Bruno-Piter
           token: ${{ secrets.METRICS_TOKEN || github.token }}
           template: classic
