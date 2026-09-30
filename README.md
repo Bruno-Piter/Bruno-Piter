@@ -31,7 +31,7 @@
 </picture>
 
 <div align="center">
-  <img width="480" alt="GitHub metrics" src="assets/github-metrics.svg" />
+  <img width="480" alt="GitHub metrics" src="assets/github-metrics.svg?v=1" />
 </div>
 
 <table>
