@@ -42,8 +42,8 @@
 </table>
 
 <div align="center">
-  <img width="49%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=467" alt="most used languages" />
-  <img width="49%" src="https://github-stats-extended.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&card_width=467" alt="github stats" />
+  <img width="49%" src="https://github-readme-stats-two-chi-53.vercel.app/api/top-langs/?username=Bruno-Piter&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=467" alt="most used languages" />
+  <img width="49%" src="https://github-readme-stats-two-chi-53.vercel.app/api?username=Bruno-Piter&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&card_width=467" alt="github stats" />
 </div>
 
 ###
